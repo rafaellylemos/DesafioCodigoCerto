@@ -6,8 +6,6 @@ import { JobCardComponent } from './job-card/job-card.component';
   standalone: true,
   imports: [JobCardComponent],
   templateUrl: './jobs.component.html',
-  styleUrl: './jobs.component.scss'
+  styleUrl: './jobs.component.scss',
 })
-export class JobsComponent {
-
-}
+export class JobsComponent {}

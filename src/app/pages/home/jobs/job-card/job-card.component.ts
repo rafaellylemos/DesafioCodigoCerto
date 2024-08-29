@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './job-card.component.html',
-  styleUrl: './job-card.component.scss'
+  styleUrl: './job-card.component.scss',
 })
 export class JobCardComponent {
   @Input() img: string = '';

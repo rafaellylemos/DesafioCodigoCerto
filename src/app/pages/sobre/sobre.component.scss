@@ -159,11 +159,11 @@
     display: flex;
     margin: 3rem;
     gap: 2rem;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 
     &__left {
-        width: 100%;
-        margin-left: 30px;
+      width: 100%;
+      margin-left: 30px;
       h2 {
         font-size: 30px;
         color: #e53939;
@@ -198,7 +198,7 @@
       span:hover {
         color: #e53939;
         cursor: pointer;
-    }
+      }
     }
 
     &__right {
@@ -225,16 +225,16 @@
 }
 
 .sobre__blog-time__right__img:nth-child(2) {
-    left: -100px; /* Posiciona a segunda imagem à direita da primeira */
-    z-index: 2; /* Garante que a segunda imagem fique na frente da primeira */
+  left: -100px;
+  z-index: 2;
 }
 
 .sobre__blog-time__right__img:nth-child(3) {
-    left: -200px; /* Posiciona a terceira imagem à direita da segunda */
-    z-index: 3; /* Garante que a terceira imagem fique na frente da segunda */
+  left: -200px;
+  z-index: 3;
 }
 
 .sobre__blog-time__right__img:hover {
-    z-index: 4; /* Traz a imagem em hover para a frente */
-    transform: scale(1.1); /* Aumenta o tamanho da imagem em hover */
+  z-index: 4;
+  transform: scale(1.1);
 }

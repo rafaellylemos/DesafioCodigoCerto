@@ -1,28 +1,27 @@
 .job-card {
-    width: 100vh;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100vh;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  &__container {
+    margin: 10px;
+    background-color: lightgray;
     border-radius: 5px;
+  }
 
-    &__container {
-        margin: 10px;
-        background-color: lightgray;
-        border-radius: 5px;
-        
+  &__preview {
+    img {
+      width: 250px;
+      height: 200px;
+      object-fit: cover;
     }
+  }
 
-    &__preview {
-        img {
-            width: 250px;
-            height: 200px;
-            object-fit: cover;
-        }
-    }
-
-    &__text {
-        height: 80px;
-        justify-content: end;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
+  &__text {
+    height: 80px;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 }

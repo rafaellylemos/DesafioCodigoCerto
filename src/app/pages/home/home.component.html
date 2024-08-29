@@ -1,34 +1,33 @@
 <section class="home">
-    <div class="home__left">
-      <div class="home__left__img">
-        <img
-          src="../assets/images/homephoto.png"
-          alt="Fotógrafa Rafaelly Lemos"
-        />
-      </div>
-      <div class="home__left__text">
-        <h3 (click)="navigateToFotografia()">[ photo ]</h3>
-        <p>Fotógrafa especialista em construção de heranças familiares.</p>
-      </div>
+  <div class="home__left">
+    <div class="home__left__img">
+      <img
+        src="../assets/images/homephoto.png"
+        alt="Fotógrafa Rafaelly Lemos"
+      />
     </div>
-    <div class="home__right">
-      <div class="home__right__img">
-        <img
-          src="../assets/images/homecode.png"
-          alt="Desenvolvedora Frontend Rafaelly Lemos"
-        />
-      </div>
-      <div class="home__right__text">
-        <h3 (click)="navigateToDesenvolvimento()">&lt; coder &gt;</h3>
-        <p>
-          Desenvolvedora Frontend.
-          <br />
-          Código limpo, elegante e eficiente.
-        </p>
-      </div>
+    <div class="home__left__text">
+      <h3 (click)="navigateToFotografia()">[ photo ]</h3>
+      <p>Fotógrafa especialista em construção de heranças familiares.</p>
     </div>
-  </section>
-  <section class="jobs">
-    <app-jobs />
-  </section>
-  
+  </div>
+  <div class="home__right">
+    <div class="home__right__img">
+      <img
+        src="../assets/images/homecode.png"
+        alt="Desenvolvedora Frontend Rafaelly Lemos"
+      />
+    </div>
+    <div class="home__right__text">
+      <h3 (click)="navigateToDesenvolvimento()">&lt; coder &gt;</h3>
+      <p>
+        Desenvolvedora Frontend.
+        <br />
+        Código limpo, elegante e eficiente.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="jobs">
+  <app-jobs />
+</section>

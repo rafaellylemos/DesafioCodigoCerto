@@ -8,9 +8,15 @@ import { HeaderComponent } from './components/header/header.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HomeComponent, FooterComponent, HeaderComponent],
+  imports: [
+    RouterOutlet,
+    CommonModule,
+    HomeComponent,
+    FooterComponent,
+    HeaderComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'Rafaelly Lemos';

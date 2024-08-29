@@ -6,23 +6,21 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './contato.component.html',
-  styleUrl: './contato.component.scss'
+  styleUrl: './contato.component.scss',
 })
 export class ContatoComponent {
-isSpan01:boolean = false;
-isSpan02:boolean = false;
+  isSpan01: boolean = false;
+  isSpan02: boolean = false;
 
-showSpan01(state: boolean) {
-  this.isSpan01 = state;
-}
+  showSpan01(state: boolean) {
+    this.isSpan01 = state;
+  }
 
-showSpan02(state: boolean) {
-  this.isSpan02 = state;
-}
+  showSpan02(state: boolean) {
+    this.isSpan02 = state;
+  }
 
-ngAfterViewInit(): void {
-  // Adiciona a classe 'loaded' para iniciar a animação
-  document.querySelector('.contato')?.classList.add('loaded');
-}
-
+  ngAfterViewInit(): void {
+    document.querySelector('.contato')?.classList.add('loaded');
+  }
 }

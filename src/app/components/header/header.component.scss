@@ -2,7 +2,7 @@
   display: flex;
   background-color: black;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 2rem;
 
   &__left {
@@ -15,8 +15,8 @@
     font-weight: 200;
 
     img {
-        width: 200px;
-        height: auto;
+      width: 200px;
+      height: auto;
     }
   }
 
@@ -42,12 +42,12 @@
       transition: font-size 0.3s ease;
     }
 
-    &__social-medias{
-        display: flex;
-        gap: 4rem;
+    &__social-medias {
+      display: flex;
+      gap: 4rem;
     }
 
-    &__social-media{
+    &__social-media {
       img {
         width: 30px;
         height: 30px;

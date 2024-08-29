@@ -1,28 +1,26 @@
 .personal-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
 
-
-    &__photo {
-        img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 100px;
-            //border: 4px solid #e53939;
-        }
+  &__photo {
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 100px;
     }
+  }
 
-    &__text {
-        line-height: 1.3rem;
+  &__text {
+    line-height: 1.3rem;
 
-        span {
-        color: #505050;
-        font-size: 14px;
-        }
+    span {
+      color: #505050;
+      font-size: 14px;
     }
+  }
 }

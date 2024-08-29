@@ -8,7 +8,7 @@
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
   margin: 2rem 0;
   padding: 2rem 0;
-  overflow: hidden; 
+  overflow: hidden;
 
   &__right {
     width: 50vh;
@@ -86,7 +86,6 @@
         font-weight: bold;
         display: flex;
         align-items: center;
-        
       }
     }
   }
@@ -96,7 +95,6 @@
   cursor: pointer;
 
   span {
-    //display: inline-block;
     opacity: 1;
   }
 
@@ -106,32 +104,30 @@
 }
 
 .border {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    margin: 4rem auto;
-    margin-bottom: 10rem;
-    width: 30%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 4rem auto;
+  margin-bottom: 10rem;
+  width: 30%;
 }
 
 .contato__right {
-    /* Inicialmente posiciona as divs fora da tela */
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 1s ease-out, opacity 1s ease-out;
-  }
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
 
-  .contato__left {
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: transform 1s ease-out, opacity 1s ease-out;
-  }
+.contato__left {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
 
-  .contato.loaded .contato__left {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  
-  .contato.loaded .contato__right {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.contato.loaded .contato__left {
+  transform: translateX(0);
+  opacity: 1;
+}
 
+.contato.loaded .contato__right {
+  transform: translateX(0);
+  opacity: 1;
+}

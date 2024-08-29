@@ -6,10 +6,10 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   navigateToSobre(): void {
     this.router.navigate(['/sobre']);

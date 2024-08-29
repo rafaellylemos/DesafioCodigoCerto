@@ -4,7 +4,7 @@
   justify-content: center;
   background-color: white;
   margin: 5rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 200;
   flex-direction: column;
 
@@ -57,37 +57,37 @@
   }
 
   &__job:hover {
-    width: 35%; 
-    height: 300px; 
-    z-index: 1; 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+    width: 35%;
+    height: 300px;
+    z-index: 1;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
 }
 
 app-job-card {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
 
-    p {
-        letter-spacing: 0.5rem;
-    }
+  p {
+    letter-spacing: 0.5rem;
+  }
 
-    span {
-        color: gray;
-        margin-bottom: 0.5rem;
-    }
+  span {
+    color: gray;
+    margin-bottom: 0.5rem;
+  }
 }
 
 app-job-card:hover {
-
-  span, p {
-    color:#e53939;
+  span,
+  p {
+    color: #e53939;
   }
 
   p {

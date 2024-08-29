@@ -4,7 +4,7 @@
   margin: 0 20rem;
   justify-content: center;
   font-family: "Inter", sans-serif;
-  
+
   div:nth-of-type(1) {
     margin-top: 8rem;
   }
@@ -37,27 +37,22 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
 
     app-post {
-        display: flex;
-        text-align: justify;
-        
-        line-height: 1.5rem;
-        letter-spacing: 0.1rem;
-        //margin: 1rem auto;
-        width: 80%;
-        
-      
-        p {
-          margin: 10px;
-        }
+      display: flex;
+      text-align: justify;
+
+      line-height: 1.5rem;
+      letter-spacing: 0.1rem;
+      width: 80%;
+
+      p {
+        margin: 10px;
       }
-      
+    }
   }
 }
 
 .border {
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
-    
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
 }

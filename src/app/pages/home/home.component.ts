@@ -7,10 +7,10 @@ import { JobsComponent } from './jobs/jobs.component';
   standalone: true,
   imports: [JobsComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   navigateToFotografia(): void {
     this.router.navigate(['/sobre']);

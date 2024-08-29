@@ -7,8 +7,6 @@ import { PersonalInfoComponent } from './personal-info/personal-info.component';
   standalone: true,
   imports: [PostComponent, PersonalInfoComponent],
   templateUrl: './blog.component.html',
-  styleUrl: './blog.component.scss'
+  styleUrl: './blog.component.scss',
 })
-export class BlogComponent {
-
-}
+export class BlogComponent {}
