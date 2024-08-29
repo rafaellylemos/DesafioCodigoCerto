@@ -1,0 +1,97 @@
+.jobs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  flex-direction: column;
+
+  &__text {
+    position: relative;
+    padding: 0 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin: 50px;
+  }
+
+  .jobs__text::before,
+  .jobs__text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+
+  .jobs__text::before {
+    left: -110%;
+  }
+
+  .jobs__text::after {
+    right: -110%;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    gap: 3rem;
+    width: 100%;
+  }
+
+  &__job {
+    display: flex;
+    width: 30%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  &__job:hover {
+    width: 35%; 
+    height: 300px; 
+    z-index: 1; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+  }
+}
+
+app-job-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+
+    p {
+        letter-spacing: 0.5rem;
+    }
+
+    span {
+        color: gray;
+        margin-bottom: 0.5rem;
+    }
+}
+
+app-job-card:hover {
+
+  span, p {
+    color:#e53939;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+}

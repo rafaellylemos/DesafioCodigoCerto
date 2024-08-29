@@ -1,0 +1,137 @@
+.contato {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  border-bottom: 1px solid black;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  margin: 2rem 0;
+  padding: 2rem 0;
+  overflow: hidden; 
+
+  &__right {
+    width: 50vh;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 80px 10px;
+    width: 18rem;
+    height: 25rem;
+    margin: 3rem;
+    transform: translateX(100%);
+
+    img {
+      width: 20rem;
+      border-radius: 80px 10px;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-delay: 0.5s;
+
+    h1 {
+      margin: 4rem 0 0.5rem 0;
+      font-size: 60px;
+      font-weight: 400;
+      letter-spacing: 1rem;
+      color: #e53939;
+      min-width: 150px;
+    }
+
+    p {
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.1rem;
+      min-width: 150px;
+    }
+
+    &__social-medias {
+      margin: 4rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      justify-content: center;
+    }
+
+    &__social-media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 100px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+      }
+
+      span {
+        display: none;
+        transition: opacity 1s ease;
+        justify-content: center;
+        margin-left: 10px;
+        color: black;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        
+      }
+    }
+  }
+}
+
+.contato__left__social-media:hover {
+  cursor: pointer;
+
+  span {
+    //display: inline-block;
+    opacity: 1;
+  }
+
+  img {
+    transform: scale(1.1);
+  }
+}
+
+.border {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 4rem auto;
+    margin-bottom: 10rem;
+    width: 30%;
+}
+
+.contato__right {
+    /* Inicialmente posiciona as divs fora da tela */
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+
+  .contato__left {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+
+  .contato.loaded .contato__left {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .contato.loaded .contato__right {
+    transform: translateX(0);
+    opacity: 1;
+  }
+

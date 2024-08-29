@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  padding: 2rem;
+
+  &__left {
+    width: 50%;
+    display: flex;
+    padding-left: 10rem;
+    justify-content: start;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 200;
+
+    img {
+        width: 200px;
+        height: auto;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8rem;
+    padding-left: 5rem;
+
+    &__options {
+      display: flex;
+      justify-content: end;
+      gap: 4rem;
+      font-weight: 200;
+      font-size: 24px;
+    }
+
+    &__option:hover {
+      cursor: pointer;
+      font-size: 22px;
+      transition: font-size 0.3s ease;
+    }
+
+    &__social-medias{
+        display: flex;
+        gap: 4rem;
+    }
+
+    &__social-media{
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      :hover {
+        img {
+          width: 25px;
+          height: 25px;
+          transition: width 0.3s ease, height 0.3s ease;
+        }
+      }
+    }
+  }
+}
