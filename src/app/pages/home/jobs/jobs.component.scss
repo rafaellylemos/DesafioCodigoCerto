@@ -1,7 +1,6 @@
 .jobs {
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: white;
   margin: 5rem;
   font-family: "Inter", sans-serif;
@@ -67,10 +66,7 @@
 
 app-job-card {
   width: 100%;
-  height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   margin: 1rem;
 

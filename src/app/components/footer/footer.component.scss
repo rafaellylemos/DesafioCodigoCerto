@@ -9,29 +9,19 @@
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 18px;
-    font-weight: 200;
-    color: white;
   }
 
   &__right {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 8rem;
     padding-left: 5rem;
 
     &__options {
       display: flex;
       gap: 4rem;
-      font-weight: 200;
       font-size: 18px;
-    }
-
-    &__options:hover {
-      cursor: pointer;
     }
 
     &__option:hover {
