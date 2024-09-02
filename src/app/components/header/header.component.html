@@ -1,4 +1,4 @@
-<section class="header">
+<header class="header">
   <div class="header__left">
     <a href="/"
       ><img
@@ -8,39 +8,43 @@
     /></a>
   </div>
   <div class="header__right">
-    <div class="header__right__options">
-      <div class="header__right__option" (click)="navigateToSobre()">sobre</div>
-      <div class="header__right__option" (click)="navigateToBlog()">blog</div>
-      <div class="header__right__option" (click)="navigateToContato()">
-        contato
-      </div>
-    </div>
-    <div class="header__right__social-medias">
-      <div class="header__right__social-media">
+    <ul class="header__right__options">
+      <li class="header__right__option">
+        <button (click)="navigateToSobre()">sobre</button>
+      </li>
+      <li class="header__right__option">
+        <button (click)="navigateToBlog()">blog</button>
+      </li>
+      <li class="header__right__option">
+        <button (click)="navigateToContato()">contato</button>
+      </li>
+    </ul>
+    <ul class="header__right__social-medias">
+      <li class="header__right__social-media">
         <a href="https://www.linkedin.com/in/rafaelly-lemos/" target="_blank"
           ><img src="../../../assets/icons/linkedin.svg" alt="Linkedin"
         /></a>
-      </div>
-      <div class="header__right__social-media">
+      </li>
+      <li class="header__right__social-media">
         <a href="https://github.com/rafaellylemos" target="_blank"
           ><img src="../../../assets/icons/github.svg" alt="Github"
         /></a>
-      </div>
-      <div class="header__right__social-media">
+      </li>
+      <li class="header__right__social-media">
         <a
           href="https://www.instagram.com/rafaellylemosfotografia/"
           target="_blank"
         >
           <img src="../../../assets/icons/instagram.svg" alt="Instagram"
         /></a>
-      </div>
-      <div class="header__right__social-media">
+      </li>
+      <li class="header__right__social-media">
         <a
           href="https://open.spotify.com/user/oiuoo8l3sohx6gbdb7w23b3b6"
           target="_blank"
           ><img src="../../../assets/icons/spotify.svg" alt="Spotify"
         /></a>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
-</section>
+</header>

@@ -9,7 +9,6 @@
 
   &__text {
     position: relative;
-    padding: 0 20px;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
@@ -37,7 +36,7 @@
   &__container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    //align-items: center;
     margin: 3rem;
     gap: 3rem;
     width: 100%;
@@ -70,8 +69,9 @@ app-job-card {
   text-align: center;
   margin: 1rem;
 
-  p {
-    letter-spacing: 0.5rem;
+  h3 {
+    letter-spacing: 0.3rem;
+    font-size: 16px;
   }
 
   span {
@@ -87,7 +87,6 @@ app-job-card:hover {
   }
 
   p {
-    font-weight: 300;
     font-size: 1.2rem;
   }
 }

@@ -68,7 +68,7 @@
     &__info {
       font-family: "Inter", sans-serif;
 
-      span {
+      h2 {
         color: #e53939;
         font-size: 30px;
         letter-spacing: 0.5rem;
@@ -179,17 +179,18 @@
         line-height: 1.8rem;
       }
 
-      span {
-        width: 67%;
+      button {
         margin-left: 30px;
         justify-content: center;
         text-align: justify;
         font-weight: bold;
         font-size: 16px;
         text-transform: uppercase;
+        background-color: transparent;
+        border: none;
       }
 
-      span:hover {
+      button:hover {
         color: #e53939;
         cursor: pointer;
       }

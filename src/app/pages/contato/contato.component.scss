@@ -12,8 +12,6 @@
     border: 1px solid black;
     padding: 10px;
     border-radius: 80px 10px;
-    width: 18rem;
-    height: 25rem;
     margin: 3rem;
     transform: translateX(100%);
     opacity: 0;
@@ -29,8 +27,8 @@
   &__left {
     transition-delay: 0.5s;
     transform: translateX(-100%);
-  opacity: 0;
-  transition: transform 1s ease-out, opacity 1s ease-out;
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
 
     h1 {
       margin: 4rem 0 0.5rem 0;

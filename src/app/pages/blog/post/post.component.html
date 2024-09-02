@@ -1,21 +1,21 @@
-<div class="style">
-  <div class="photos">
-    <div class="photo">
+<section class="gallery">
+  <div class="gallery__photos">
+    <figure class="gallery__photo">
       <img [src]="'../../../../assets/images/' + img01" alt="" />
-    </div>
-    <div class="photo">
+    </figure>
+    <figure class="gallery__photo">
       <img [src]="'../../../../assets/images/' + img02" alt="" />
       <img [src]="'../../../../assets/images/' + img03" alt="" />
-    </div>
-    <div class="photo">
+    </figure>
+    <figure class="gallery__photo">
       <img [src]="'../../../../assets/images/' + img04" alt="" />
       <img [src]="'../../../../assets/images/' + img05" alt="" />
-    </div>
-    <div class="photo">
+    </figure>
+    <figure class="gallery__photo">
       <img [src]="'../../../../assets/images/' + img06" alt="" />
-    </div>
+    </figure>
   </div>
-  <div class="text">
+  <article class="gallery__text">
     <ng-content></ng-content>
-  </div>
-</div>
+  </article>
+</section>

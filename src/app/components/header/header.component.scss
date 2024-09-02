@@ -24,19 +24,28 @@
     &__options {
       display: flex;
       gap: 4rem;
-      font-weight: 200;
-      font-size: 24px;
+      list-style: none;
     }
 
-    &__option:hover {
-      cursor: pointer;
-      font-size: 22px;
-      transition: font-size 0.3s ease;
+    &__option {
+      button {
+        background-color: black;
+        color: white;
+        font-size: 24px;
+        font-weight: 200;
+        border: none;
+      }
+      button:hover {
+        cursor: pointer;
+        font-size: 22px;
+        transition: font-size 0.3s ease;
+      }
     }
 
     &__social-medias {
       display: flex;
       gap: 4rem;
+      list-style: none;
     }
 
     &__social-media {

@@ -5,7 +5,7 @@
   justify-content: center;
   font-family: "Inter", sans-serif;
 
-  div:nth-of-type(1) {
+  article:nth-of-type(1) {
     margin-top: 8rem;
   }
 
@@ -22,7 +22,7 @@
       letter-spacing: 1rem;
     }
 
-    h3 {
+    h2 {
       font-weight: lighter;
       letter-spacing: 0.3rem;
       line-height: 1.5rem;
