@@ -1,84 +1,40 @@
 .home {
   display: flex;
-  overflow: hidden;
+  justify-content: center;
   border-bottom: 1px solid black;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
   position: relative;
   width: 100%;
   font-family: "Inter", sans-serif;
 
-  &__left {
-    width: 50vw;
-
-    img {
-      width: 200%;
-    }
-
-    &__text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      bottom: 55%;
-      width: 100vh;
-
-      h2 {
-        font-size: 65px;
-        transition: all 0.3s ease;
-      }
-
-      h2:hover {
-        cursor: pointer;
-        color: #e53939;
-        font-size: 60px;
-      }
-
-      h2:hover + p {
-        color: #e53939;
-        font-size: 15px;
-      }
-
-      p {
-        margin: 20px;
-        width: 40%;
-        color: #505050;
-        font-size: 18px;
-        letter-spacing: 2px;
-        line-height: 1.8rem;
-        text-align: center;
-      }
-    }
+  img {
+    width: 100%;
+    object-fit: cover;
   }
 
-  &__right {
-    width: 50vw;
-    overflow: hidden;
+  &__content {
+    position: absolute;
     display: flex;
-    align-items: center;
-    position: relative;
+    height: 50vh;
+    width: 100%;
+    padding: 5rem;
 
-    img {
-      width: 200%;
-      transform: translateX(-50%);
-    }
-
-    &__text {
+    &__item {
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      position: absolute;
-      bottom: 55%;
-      width: 100vh;
+      width: 50vw;
 
       h2 {
         font-size: 65px;
         transition: all 0.3s ease;
-      }
 
-      h2:hover {
-        cursor: pointer;
-        color: #e53939;
-        font-size: 60px;
+        &:hover {
+          cursor: pointer;
+          color: #e53939;
+          font-size: 60px;
+        }
       }
 
       h2:hover + p {
@@ -87,7 +43,6 @@
       }
 
       p {
-        text-align: center;
         margin: 20px;
         width: 40%;
         color: #505050;

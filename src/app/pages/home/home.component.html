@@ -1,32 +1,22 @@
 <section class="home">
-  <article class="home__left">
-    <figure class="home__left__img">
-      <img
-        src="../assets/images/homephoto.png"
-        alt="Fotógrafa Rafaelly Lemos"
-      />
-    </figure>
-    <div class="home__left__text">
+  <figure>
+    <img src="../../../assets/images/homephoto.png" alt="" />
+  </figure>
+
+  <div class="home__content">
+    <section class="home__content__item">
       <h2 (click)="navigateToFotografia()">[ photo ]</h2>
       <p>Fotógrafa especialista em construção de heranças familiares.</p>
-    </div>
-  </article>
-  <article class="home__right">
-    <figure class="home__right__img">
-      <img
-        src="../assets/images/homecode.png"
-        alt="Desenvolvedora Frontend Rafaelly Lemos"
-      />
-    </figure>
-    <div class="home__right__text">
+    </section>
+    <section class="home__content__item">
       <h2 (click)="navigateToDesenvolvimento()">&lt; coder &gt;</h2>
       <p>
         Desenvolvedora Frontend.
         <br />
         Código limpo, elegante e eficiente.
       </p>
-    </div>
-  </article>
+    </section>
+  </div>
 </section>
 <section class="jobs">
   <app-jobs />
