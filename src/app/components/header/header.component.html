@@ -47,4 +47,34 @@
       </li>
     </ul>
   </div>
+  <nav class="header__mobile">
+    <li class="header__mobile__icon" (click)="toggleMenu()">
+      <img
+        [src]="
+          isMenuOpen
+            ? '../../../assets/icons/close-x.svg'
+            : '../../../assets/images/main-menu.png'
+        "
+        height="24"
+        width="24"
+        alt=""
+      />
+      {{ isMenuOpen ? "" : "" }}
+    </li>
+
+    <ul class="header__mobile__menu" [class.is-open]="isMenuOpen">
+      <li class="header__mobile__menu-item">
+        <button (click)="navigateToHome()">home</button>
+      </li>
+      <li class="header__mobile__menu-item">
+        <button (click)="navigateToSobre()">sobre</button>
+      </li>
+      <li class="header__mobile__menu-item">
+        <button (click)="navigateToBlog()">blog</button>
+      </li>
+      <li class="header__mobile__menu-item">
+        <button (click)="navigateToContato()">contato</button>
+      </li>
+    </ul>
+  </nav>
 </header>

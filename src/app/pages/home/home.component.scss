@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .home {
   display: flex;
   justify-content: center;
@@ -49,6 +51,48 @@
         font-size: 18px;
         letter-spacing: 2px;
         line-height: 1.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex: 1;
+  }
+
+  .home {
+    margin-top: 2rem;
+    height: 100%;
+
+    &__figure {
+      max-width: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    &__content {
+      flex-direction: row;
+      width: auto;
+      padding: 0;
+      height: 100%;
+
+      &__item {
+        height: 100%;
+
+        h2 {
+          font-size: 30px;
+          color: $red;
+        }
+
+        p {
+          display: none;
+        }
       }
     }
   }

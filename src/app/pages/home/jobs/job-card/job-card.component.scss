@@ -25,3 +25,12 @@
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .job-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+  }
+}

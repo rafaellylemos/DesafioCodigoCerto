@@ -12,7 +12,7 @@
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
-    margin: 50px;
+    margin: 40px;
   }
 
   .jobs__text::before,
@@ -36,16 +36,16 @@
   &__container {
     display: flex;
     justify-content: center;
-    //align-items: center;
-    margin: 3rem;
+    margin: 4rem;
     gap: 3rem;
     width: 100%;
+    height: 100%;
   }
 
   &__job {
     display: flex;
     width: 30%;
-    height: 200px;
+    height: 250px;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
@@ -93,6 +93,50 @@ app-job-card:hover {
 
 @media screen and (max-width: 768px) {
   .jobs {
-    display: none;
+    position: relative;
+    margin: 3rem;
+    width: 70%;
+
+    &__text {
+      font-size: 14px;
+      letter-spacing: 0.3rem;
+      margin: 0px;
+      position: relative;
+    }
+
+    .jobs__text::before,
+    .jobs__text::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 30%;
+      height: 1px;
+      background-color: black;
+    }
+
+    .jobs__text::before {
+      left: -35%;
+    }
+
+    .jobs__text::after {
+      right: -35%;
+    }
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__job {
+      gap: 2rem;
+      background-color: transparent;
+      box-shadow: none;
+      width: auto;
+      height: 270px;
+      display: block;
+    }
+  }
+
+  app-job-card {
+    margin: 0;
   }
 }

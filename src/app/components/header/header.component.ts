@@ -9,7 +9,13 @@ import { Router } from '@angular/router';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  isMenuOpen: boolean = false;
+
   constructor(private router: Router) {}
+
+  navigateToHome(): void {
+    this.router.navigate(['/']);
+  }
 
   navigateToSobre(): void {
     this.router.navigate(['/sobre']);
@@ -22,4 +28,8 @@ export class HeaderComponent {
   navigateToContato(): void {
     this.router.navigate(['/contato']);
   }
+
+toggleMenu(): void {
+  this.isMenuOpen = !this.isMenuOpen;
+}
 }

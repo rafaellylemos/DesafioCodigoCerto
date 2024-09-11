@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .header {
   display: flex;
   background-color: black;
@@ -62,5 +64,54 @@
         }
       }
     }
+  }
+
+  &__mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: 100vw;
+    padding: 1rem;
+
+    &__left {
+      display: none;
+    }
+
+    &__right {
+      display: none;
+    }
+
+    &__mobile__menu {
+      display: none;
+    }
+
+    &__mobile {
+      display: flex;
+      width: 100%;
+      justify-content: start;
+
+      li {
+        list-style: none;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.is-open {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  gap: 2rem;
+  margin: 0 2rem;
+
+  button {
+    margin-left: 0.5rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
   }
 }

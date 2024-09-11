@@ -1,23 +1,26 @@
-<section class="home">
-  <figure>
-    <img src="../../../assets/images/homephoto.png" alt="" />
-  </figure>
-
-  <div class="home__content">
-    <section class="home__content__item">
-      <h2 (click)="navigateToFotografia()">[ photo ]</h2>
-      <p>Fotógrafa especialista em construção de heranças familiares.</p>
-    </section>
-    <section class="home__content__item">
-      <h2 (click)="navigateToDesenvolvimento()">&lt; coder &gt;</h2>
-      <p>
-        Desenvolvedora Frontend.
-        <br />
-        Código limpo, elegante e eficiente.
-      </p>
-    </section>
-  </div>
-</section>
-<section class="jobs">
-  <app-jobs />
-</section>
+<main>
+  <section class="home">
+    <div>
+      <figure class="home__figure">
+        <img src="../../../assets/images/homephoto.png" alt="" />
+      </figure>
+    </div>
+    <div class="home__content">
+      <section class="home__content__item">
+        <h2 (click)="navigateToFotografia()">[ photo ]</h2>
+        <p>Fotógrafa especialista em construção de heranças familiares.</p>
+      </section>
+      <section class="home__content__item">
+        <h2 (click)="navigateToDesenvolvimento()">&lt; coder &gt;</h2>
+        <p>
+          Desenvolvedora Frontend.
+          <br />
+          Código limpo, elegante e eficiente.
+        </p>
+      </section>
+    </div>
+  </section>
+  <section class="jobs">
+    <app-jobs />
+  </section>
+</main>
