@@ -73,7 +73,6 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    display: 100vw;
     padding: 1rem;
 
     &__left {
@@ -89,6 +88,7 @@
     }
 
     &__mobile {
+      position: sticky;
       display: flex;
       width: 100%;
       justify-content: start;
