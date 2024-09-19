@@ -22,3 +22,27 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .personal-info {
+
+    &__photo {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &__details {
+      line-height: 0.8rem;
+      
+      p {
+        font-size: 12px;
+      }
+
+      time {
+        font-size: 10px;
+      }
+    }
+  }
+}

@@ -16,6 +16,11 @@
     </figure>
   </div>
   <article class="gallery__text">
+    <div class="gallery__text__content" #textContent [ngClass]="{'expanded': isExpanded}">
     <ng-content></ng-content>
+    </div>
+    <div class="gallery__text__content__button">
+      <button id="toggleButton" (click)="toggleText()">{{ isExpanded ? 'Menos' : 'Mais' }}</button>
+    </div>
   </article>
 </section>
