@@ -64,28 +64,31 @@
   <h2>"You can call me Rafa!"</h2>
 </div>
 <section class="sobre__blog-time">
-  <div class="sobre__blog-time__left">
-    <h2>"You can call me Rafa!"</h2>
-    <p>
-      Ok, você já conhece a profissional Rafaelly Lemos. Que tal conhecer agora
-      a Rafa (aquela menina meio doidinha que adora sair pra conhecer bares,
-      jogar conversa fora, viajar e que ama sua família, amigos e a arte de uma
-      forma em geral)?
-    </p>
-    <button (click)="navigateToBlog()">Vem ler meu blog!</button>
-    <button (click)="navigateToBlog()">
-      Leia meu blog!
-    </button>
+  <div class="sobre__blog-time--lineDivision">
+    <div class="sobre__blog-time__left">
+      <h2>"You can call me Rafa!"</h2>
+      <p>
+        Ok, você já conhece a profissional Rafaelly Lemos. Que tal conhecer
+        agora a Rafa (aquela menina meio doidinha que adora sair pra conhecer
+        bares, jogar conversa fora, viajar e que ama sua família, amigos e a
+        arte de uma forma em geral)?
+      </p>
+      <button (click)="navigateToBlog()">Vem ler meu blog!</button>
+      <button (click)="navigateToBlog()">Leia meu blog!</button>
+    </div>
+    <div class="sobre__blog-time__right">
+      <figure class="sobre__blog-time__right__img">
+        <img src="../../../assets/images/Rafaelly03.png" alt="" />
+      </figure>
+      <figure class="sobre__blog-time__right__img">
+        <img src="../../../assets/images/Rafaelly02.png" alt="" />
+      </figure>
+      <figure class="sobre__blog-time__right__img">
+        <img src="../../../assets/images/Rafaelly01.png" alt="" />
+      </figure>
+    </div>
   </div>
-  <div class="sobre__blog-time__right">
-    <figure class="sobre__blog-time__right__img">
-      <img src="../../../assets/images/Rafaelly03.png" alt="" />
-    </figure>
-    <figure class="sobre__blog-time__right__img">
-      <img src="../../../assets/images/Rafaelly02.png" alt="" />
-    </figure>
-    <figure class="sobre__blog-time__right__img">
-      <img src="../../../assets/images/Rafaelly01.png" alt="" />
-    </figure>
-  </div>
+    <div class="sobre__blog-time__right__arrow">
+      <app-arrow-up (click)="scrollToTop()"/>
+    </div>
 </section>

@@ -1,26 +1,42 @@
 <section class="gallery">
   <div class="gallery__photos">
-    <figure class="gallery__photo">
-      <img [src]="'../../../../assets/images/' + img01" alt="" />
+    <figure class="gallery__photo gallery__photo__img01">
+      <img [src]="'../../../../assets/images/' + img01" alt=""/>
     </figure>
-    <figure class="gallery__photo">
+
+    <figure class="gallery__photo gallery__photo__img02">
       <img [src]="'../../../../assets/images/' + img02" alt="" />
-      <img [src]="'../../../../assets/images/' + img03" alt="" />
+      </figure>
+
+      <figure class="gallery__photo gallery__photo__img03">
+      <img [src]="'../../../../assets/images/' + img03" alt=""/>
     </figure>
-    <figure class="gallery__photo">
-      <img [src]="'../../../../assets/images/' + img04" alt="" />
-      <img [src]="'../../../../assets/images/' + img05" alt="" />
+
+    <figure class="gallery__photo gallery__photo__img04">
+      <img [src]="'../../../../assets/images/' + img04" alt="" class="gallery__photo__img04"/>
     </figure>
-    <figure class="gallery__photo">
-      <img [src]="'../../../../assets/images/' + img06" alt="" />
+    <figure class="gallery__photo gallery__photo__img05">
+      <img [src]="'../../../../assets/images/' + img06" alt="" class="gallery__photo__img06"/>
+    </figure>
+
+    <figure class="gallery__photo gallery__photo__img06">
+      <img [src]="'../../../../assets/images/' + img05" alt="" class="gallery__photo__img05"/>
     </figure>
   </div>
-  <article class="gallery__text">
-    <div class="gallery__text__content" #textContent [ngClass]="{'expanded': isExpanded}">
-    <ng-content></ng-content>
-    </div>
-    <div class="gallery__text__content__button">
-      <button id="toggleButton" (click)="toggleText()">{{ isExpanded ? 'Menos' : 'Mais' }}</button>
-    </div>
-  </article>
+
+  <div>
+    <article class="gallery__text">
+      <div
+        class="gallery__text__content"
+        [ngClass]="{ expanded: isExpanded }"
+      >
+        <ng-content></ng-content>
+      </div>
+      <div class="gallery__text__content__button">
+        <button id="toggleButton" (click)="toggleTextPost()">
+          {{ isExpanded ? "Menos" : "Mais" }}
+        </button>
+      </div>
+    </article>
+  </div>
 </section>

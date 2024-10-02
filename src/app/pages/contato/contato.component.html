@@ -19,7 +19,7 @@
           >
         </div>
       </li>
-      <div class="contato__left__social-media">
+      <li class="contato__left__social-media">
         <div
           id="redes"
           (mouseover)="showSpan02(true)"
@@ -31,7 +31,23 @@
             <span *ngIf="isSpan02">E-mail</span></a
           >
         </div>
-      </div>
+      </li>
+      <li class="contato__left__social-media">
+        <div
+          id="redes"
+          (mouseover)="showSpan03(true)"
+          (mouseleave)="showSpan03(false)"
+          class="min-width"
+        >
+          <a href="https://wa.me/5581998460022?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..." target="_blank"
+            ><img
+              src="../../../assets/icons/whatsapp.svg"
+              alt="Linkedin"
+            />
+            <span *ngIf="isSpan03">Whatsapp</span></a
+          >
+        </div>
+      </li>
     </ul>
   </article>
   <aside class="contato__right">

@@ -11,6 +11,7 @@ import { AfterViewInit, Component } from '@angular/core';
 export class ContatoComponent implements AfterViewInit{
   isSpan01: boolean = false;
   isSpan02: boolean = false;
+  isSpan03: boolean = false;
 
   ngAfterViewInit(): void {
     document.querySelector('.contato')?.classList.add('loaded');
@@ -22,5 +23,9 @@ export class ContatoComponent implements AfterViewInit{
 
   showSpan02(state: boolean) {
     this.isSpan02 = state;
+  }
+
+  showSpan03(state: boolean) {
+    this.isSpan03 = state;
   }
 }

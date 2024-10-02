@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -16,42 +16,16 @@ export class PostComponent implements AfterViewInit{
   @Input() img05: string = '';
   @Input() img06: string = '';
 
-  @ViewChild('textContent') textContent!: ElementRef<HTMLDivElement>;
+  @Output() toggle = new EventEmitter<boolean>(); 
+  @Input() isExpanded: boolean = false;
 
-  isExpanded = false;
-  initialVisibleLines = 15;
-  linesPerClick = 7;
 
   ngAfterViewInit() {
-    this.updateVisibleLines();
   }
-
-  updateVisibleLines() {
-    if (this.textContent) {
-      const content = this.textContent.nativeElement;
-      const lineHeight = parseFloat(getComputedStyle(content).lineHeight);
-    
-      content.style.maxHeight = `${this.initialVisibleLines * lineHeight}px`;
+    toggleTextPost() {
+      this.isExpanded = !this.isExpanded;
+      this.toggle.emit(this.isExpanded);
     }
-  }
-
-  toggleText() {
-    const content = this.textContent.nativeElement;
-    const lineHeight = parseFloat(getComputedStyle(content).lineHeight);
-    const contentHeight = content.scrollHeight;
   
-    if (this.isExpanded) {
-      this.initialVisibleLines = 15;
-      this.isExpanded = false;
-    } else {
-      this.initialVisibleLines += this.linesPerClick;
-      
-      if (this.initialVisibleLines * lineHeight >= contentHeight) {
-        this.initialVisibleLines = Math.floor(contentHeight / lineHeight);
-        this.isExpanded = true; 
-      }
-    }
-    
-    this.updateVisibleLines();
-  }
+  
 }

@@ -5,8 +5,8 @@
   font-family: "Inter", sans-serif;
   border-bottom: 1px solid black;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-  margin: 2rem 0;
-  padding: 2rem 0;
+  padding: 4rem 0;
+  width: 100vw;
 
   &__right {
     border: 1px solid black;
@@ -107,6 +107,31 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 950px) {
+  .contato {
+    width: 100vw;
+    padding: 6rem 0;
+    margin: 0;
+    gap: 0;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        width: 80%;
+        text-align: center;
+      }
+    }
+    &__right {
+      img {
+        width: 18rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .contato {
     flex-direction: column;
@@ -131,7 +156,7 @@
 
     &__right {
       margin: 0 3rem 3rem 3rem;
-      width: 62vw;
+      width: auto;
 
       img {
         width: 15rem;
