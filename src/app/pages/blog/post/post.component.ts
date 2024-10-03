@@ -17,16 +17,16 @@ export class PostComponent implements AfterViewInit{
   @Input() img06: string = '';
 
 
-  @Output() toggle = new EventEmitter<boolean>(); 
-  @Input() isExpanded: boolean = false;
+  @Output() toggle = new EventEmitter<{ isExpanded: boolean, id: string }>(); 
+  @Input() isExpandedPost: boolean = false;
   @Input() id: string = '';
 
 
   ngAfterViewInit() {
   }
     toggleTextPost() {
-      this.isExpanded = !this.isExpanded;
-      this.toggle.emit(this.isExpanded);
+      this.isExpandedPost = !this.isExpandedPost;
+      this.toggle.emit({ isExpanded: this.isExpandedPost, id: this.id });
     }
   
   

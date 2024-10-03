@@ -23,19 +23,17 @@ import { ArrowUpComponent } from '../../components/arrow-up/arrow-up.component';
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.scss',
 })
-export class BlogComponent implements OnInit, OnChanges {
+export class BlogComponent implements OnInit {
   isExpanded = false;
   public innerWidth: any;
+
+  expandedStates: { [key: string]: boolean } = {};
 
   constructor() {
     this.innerWidth = window.innerWidth;
   }
 
   ngOnInit() {
-    this.checkScreenSize();
-  }
-
-  ngOnChanges(changes: SimpleChanges) {
     this.checkScreenSize();
   }
 
@@ -51,11 +49,23 @@ export class BlogComponent implements OnInit, OnChanges {
     } else {
       this.isExpanded = true;
       console.log('Tela de desktop detectada');
+
+      for (const id in this.expandedStates) {
+        this.expandedStates[id] = true;
+      }
     }
   }
 
-  toggleTextFromChild(isExpanded: boolean) {
-    this.isExpanded = isExpanded;
+  toggleTextFromChild(data: { isExpanded: boolean, id: string }) {
+    const { isExpanded, id } = data;
+    this.expandedStates[id] = isExpanded;
+    console.log(this.expandedStates);
+
+    console.log(`O componente com ID "${id}" foi clicado. Novo estado: ${isExpanded ? 'Expandido' : 'Recolhido'}`);
+  }
+
+  isComponentExpanded(componentId: string): boolean {
+    return this.expandedStates[componentId] || false;
   }
 
   scrollToTop() {

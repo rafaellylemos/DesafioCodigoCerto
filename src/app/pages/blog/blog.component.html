@@ -15,8 +15,9 @@
         [img04]="'BlogRafa04.jpeg'"
         [img05]="'BlogRafa05.jpeg'"
         [img06]="'BlogRafa06.jpeg'"
-        [isExpanded]="isExpanded"
+        [isExpandedPost]="isExpanded"
         (toggle)="toggleTextFromChild($event)"
+        [id]="'component1'"
       >
         <p>Rafaelly Lemos. 34 anos, nordestina, mãe solo.</p>
         <p>
@@ -29,7 +30,7 @@
           ai que eu esbarrei no mundo da programação. Mais exatamente no
           Desenvolvimento Frontend.
         </p>
-        <div *ngIf="isExpanded" [ngClass]="{ expanded: isExpanded }">
+        <div *ngIf="isComponentExpanded('component1')" [ngClass]="{ expanded: isExpanded }">
           <p>
             Na adolescência, já havia tido contato com HTML básico e um pouco de
             CSS (com os famosos blogs com templates prontos, rs), então, quando
@@ -73,8 +74,9 @@
         [img04]="'BlogRafaFam01.jpeg'"
         [img05]="'BlogRafaFam03.jpeg'"
         [img06]="'BlogRafaFam04.jpeg'"
-        [isExpanded]="isExpanded"
+        [isExpandedPost]="isExpanded"
         (toggle)="toggleTextFromChild($event)"
+        [id]="'component2'"
       >
         <p>
           Divido a vida com essas duas pessoas da foto: meu filho e meu namorado
@@ -91,7 +93,7 @@
           fundo, eu já esperava e idealizava isso há tempos... Pedro é filho do
           meu ventre e da minha alma!
         </p>
-        <div *ngIf="isExpanded" [ngClass]="{ expanded: isExpanded }">
+        <div *ngIf="isComponentExpanded('component2')" [ngClass]="{ expanded: isExpanded }">
           <p>Já André veio sem eu esperar, rs.</p>
           <p>A gente se conheceu em um aplicativo de namoro.</p>
           <p>
@@ -137,8 +139,9 @@
       [img04]="'BlogRafaJob03.jpeg'"
       [img05]="'BlogRafaJob04.jpeg'"
       [img06]="'BlogRafaJob02.jpeg'"
-      [isExpanded]="isExpanded"
+      [isExpandedPost]="isExpanded"
       (toggle)="toggleTextFromChild($event)"
+      [id]="'component3'"
     >
       <p>
         Eu acredito que tudo na vida é questão de oportunidade. Não adianta nada
@@ -150,7 +153,7 @@
         como tu queres se destacar em algo se ficas sempre esperando que "te
         achem"?
       </p>
-      <div *ngIf="isExpanded" [ngClass]="{ expanded: isExpanded }" >
+      <div *ngIf="isComponentExpanded('component3')" [ngClass]="{ expanded: isExpanded }" >
         <p>
           Fazer parte da comunidade Codigo Certo Coders, para mim, seria uma
           dessas oportunidades criadas. Oportunidade de visibilidade. De mostrar

@@ -28,13 +28,13 @@
     <article class="gallery__text">
       <div
         class="gallery__text__content"
-        [ngClass]="{ expanded: isExpanded }"
+        [ngClass]="{ expanded: isExpandedPost }"
       >
         <ng-content></ng-content>
       </div>
       <div class="gallery__text__content__button">
         <button id="toggleButton" (click)="toggleTextPost()">
-          {{ isExpanded ? "Menos" : "Mais" }}
+          {{ isExpandedPost ? "Menos" : "Mais" }}
         </button>
       </div>
     </article>
