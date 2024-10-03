@@ -16,8 +16,10 @@ export class PostComponent implements AfterViewInit{
   @Input() img05: string = '';
   @Input() img06: string = '';
 
+
   @Output() toggle = new EventEmitter<boolean>(); 
   @Input() isExpanded: boolean = false;
+  @Input() id: string = '';
 
 
   ngAfterViewInit() {
